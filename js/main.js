@@ -127,6 +127,10 @@ $(document).ready(function () {
             timeoutNav();
         }
     });
+    $(".scroll").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+    });
 //    canvas
     var canvas = document.getElementsByTagName("canvas");
     var canvas2 = document.getElementsByTagName("canvas");
